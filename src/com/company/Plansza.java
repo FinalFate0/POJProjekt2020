@@ -281,7 +281,6 @@ public class Plansza extends JPanel {
                 if (duringGame && cell == MINE) {
 
                     duringGame = false;
-                    repaint();
                 }
 
                 if (!duringGame) {
@@ -314,7 +313,6 @@ public class Plansza extends JPanel {
         if (uncover == 0 && duringGame) {
 
             duringGame = false;
-            repaint();
             messageField.setText("Wygrałeś!");
 
         } else if (!duringGame) {
